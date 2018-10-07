@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Trafic Racer</title>
+    <!-- <script src="Scripts/css/animate.css"></script> -->
+    <link href="Scripts/css/RaceCarcss.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="Scripts/js/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+</head>
+
+<body>
+
+    <div id="score_div">
+        Score: <span id="score">0</span>
+    </div>
+    <div id="police_1" class="police"></div>
+    <div id="police_2" class="police"></div>
+    <div id="controller" style="display:none;">
+
+        <input type="button" id="down" class="control" />
+        <button id="up" class="control"></button>
+
+    </div>
+    <div id="policediv">
+        <audio id="police" repeat>
+                <source src="Games/Games/Music/police.mp3">
+                Your browser does not support the audio element.
+            </audio>
+    </div>
+    <div id="life_div">
+        <div id="life11" class="life player1_life"></div>
+        <div id="life12" class="life player1_life"></div>
+        <div id="life13" class="life player1_life"></div>
+        <div id="life14" class="life player1_life"></div>
+        <div id="life15" class="life player1_life"></div>
+        <div id="life21" class="life player2_life"></div>
+        <div id="life22" class="life player2_life"></div>
+        <div id="life23" class="life player2_life"></div>
+        <div id="life24" class="life player2_life"></div>
+        <div id="life25" class="life player2_life"></div>
+    </div>
+    <div class="result_div">
+        <div id="left_result">
+            <p id="p1"> Player 1</p>
+            <p id="p2">Winner</p>
+        </div>
+        <div id="right_result">
+            <p id="p3"> Player 2</p>
+            <p id="p4">Looser</p>
+        </div>
+    </div>
+    <div class="container">
+        <div id="line_1" class="line"></div>
+        <div id="line_2" class="line"></div>
+        <div id="line_3" class="line"></div>
+
+        <div>
+            <img src="images/car.png" alt="racer" id="car_racer2" class="car" />
+            <img src="images/car.png" alt="racer" id="car_racer1" class="car" />
+            <img src="images/red.png" alt="racer" id="car_1" class="car" />
+            <img src="images/blue.png" alt="racer" id="car_2" class="car" />
+            <img src="images/yellow.png" alt="racer" id="car_3" class="car" />
+            <img src="images/police.png" alt="racer" id="car_4" class="car" />
+        </div>
+
+        <div id="restart_div">
+            <button id="restart">
+                Restart <br />
+                <small class="small_text">(Press Enter)</small>
+            </button>
+        </div>
+    </div>
+
+</body>
+<script src="Scripts/js/jquery.min.js"></script>
+<script src="Scripts/js/rainsnow.js"></script>
+<script src="Scripts/js/RaceCarjs.js"></script>
+
+
+</html>
